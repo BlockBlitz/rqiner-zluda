@@ -14,6 +14,6 @@ The following environment variables are required:
 
 The following command starts the rqiner container with the specified parameters
 
-`docker run --device=/dev/kfd --device=/dev/dri --group-add=video --security-opt seccomp=unconfined -e WALLET_ADDRESS=my-wallet-address -e WORKER_NAME=my-worker ghcr.io/BlockBlitz/rqiner:latest`
+`docker run --device=/dev/kfd --device=/dev/dri --group-add=video --security-opt seccomp=unconfined -e WALLET_ADDRESS=my-wallet-address -e WORKER_NAME=my-worker ghcr.io/BlockBlitz/rqiner-zluda:latest`
 
 Or more favorably, via the included docker-compose file.
