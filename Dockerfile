@@ -67,8 +67,10 @@ RUN cd zluda && \
     . $HOME/.cargo/env && \
     cargo xtask --release
 
+ARG RQ_VERSION="v0.3.20-cuda-fix"
+ENV RQ_VERSION=$RQ_VERSION
 COPY run.sh .
-RUN wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/v0.3.19-cuda-beta/rqiner-x86-cuda && \
+RUN wget https://github.com/Qubic-Solutions/rqiner-builds/releases/download/${RQ_VERSION}/rqiner-x86-cuda && \
     chmod +x ./rqiner-x86-cuda
 ENV LD_LIBRARY_PATH=/root/zluda/target/release
 
