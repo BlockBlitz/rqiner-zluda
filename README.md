@@ -1,4 +1,4 @@
-# Rquiner Cuda running under ZLUDA
+# Rqiner Cuda running under ZLUDA
 
 This Dockerfile and run script are all you need to run rquiner-cuda under ZLUDA for AMD GPUs.
 
