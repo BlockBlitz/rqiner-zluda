@@ -1,5 +1,5 @@
 services:
-  rquiner-zulda:
+  rquiner-zluda:
     image: ghcr.io/blockblitz/rqiner-zluda:latest
     restart: unless-stopped
     group_add:
